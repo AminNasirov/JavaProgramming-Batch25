@@ -1,0 +1,97 @@
+Java Day25
+Topics: Method Overloading
+
+package name: day25_CusomMethod_Overloading
+
+Warmup tasks:
+	Task1:
+	    1. create a method that can find the sum of two numbers
+	                    method name: sumOf2Numbers
+
+	    2. create a method that can find the sum of three numbers
+	                    method name: sumOf3Numbers
+
+	    3. create a method that can find the sum of four numbers
+	                    method name: sumOf4Numbers
+
+	Task2:
+		1. create a return method called addInteger that can add an Inteeger  after the  last index of an integer array
+
+					{1,2,3,4}, 5
+					new array ==> {1,2,3,4,5}
+
+	    2. create a return method called addDouble that can add a double after the last index of a double array
+
+	    3. create a return method called addString that can add a String after the last index of a String array
+
+	    4. create a return method called addChar that can add a char after last index of a char array
+
+
+
+Method Overloading: multiple different methods sharing the same method name
+			same method name, different parameters
+
+			return type, access modifiers and specifiers can be same or can be different
+
+			Advantage:
+				1. easy to memorize
+				2. easy to read
+				3. reusable
+				4. flexible
+
+
+
+
+Task3:
+	1. create a method that can merge two integer arrays.  		merger(int[] arr1, int[] arr2)
+
+	2. create a method that can merge two double arrays.  		merge(double[] arr1, double[] arr2)
+
+	3. create a method that can merge two char arrays.   		merge(char[] arr1, char[] arr2)
+
+	4. create a method that can merge two String arrays.  		merge(String[] arr1, String[] arr2)
+
+
+Task 4:
+	1. create a method that can return the max number from an integer array
+
+	2. create a method that can return the max number from double array
+
+	3. create a method that can return the max number from long array
+
+	4. create a method that can return the max number from short array
+
+	5. create a method that can return the max number from float array
+
+	6. create a method that can return the max number from byte array
+
+
+Task 5:
+	1. create a method that can return the min number from an integer array
+
+	2. create a method that can return the min number from double array
+
+	3. create a method that can return the min number from long array
+
+	4. create a method that can return the min number from short array
+
+	5. create a method that can return the min number from float array
+
+	6. create a method that can return the min number from byte array
+
+
+Task 6:
+	1. Create a method that can reverse an integer array
+
+	2. Create a method that can reverse a double array
+
+	3. Create a method that can reverse a char array
+
+	4. Create a method that can reverse a String array
+
+
+
+Utility Classes:
+	StringUtility
+	ArrayUtility
+	NumberUtility

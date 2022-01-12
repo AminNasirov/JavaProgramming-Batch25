@@ -1,0 +1,80 @@
+package GroupMeeting;
+
+
+
+
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+
+public class t {
+
+
+
+
+    public static void main(String[] args) {
+        String url = "http://www.google.com/";
+
+        if(Desktop.isDesktopSupported()){
+            Desktop desktop = Desktop.getDesktop();
+            try {
+                desktop.browse(new URI(url));
+            } catch (IOException | URISyntaxException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }else{
+            Runtime runtime = Runtime.getRuntime();
+            try {
+                runtime.exec("xdg-open " + url);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+
+
+
+
+}
+}
+
+
+
+   /* public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter email:");
+        String email = scan.next();
+
+        //String email = "mike_tyson@gmail.com"; //
+                     // 012345678
+
+        String firstName = email.substring(0,email.indexOf('_')); // mike
+        //System.out.println(firstName);
+
+        String lastName= email.substring(email.indexOf('_')+1,email.indexOf('@'));
+        //System.out.println(lastName);
+
+        String domain = email.substring(email.indexOf('@'));
+        //System.out.println(domain);
+
+        if(email.contains("_")){
+            System.out.println(email.substring(email.indexOf('_')+1,email.indexOf('@'))+
+                    "_"+email.substring(0,email.indexOf('_'))+email.substring(email.indexOf('@')));
+        }else{
+            System.out.println(email);
+        }
+
+
+
+
+
+
+    }
+}
+
+    */
