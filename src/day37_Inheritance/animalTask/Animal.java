@@ -1,4 +1,4 @@
-package day31_Constructors.day37_Inheritance.animalTask;
+package day37_Inheritance.animalTask;
 
 public class Animal {
 

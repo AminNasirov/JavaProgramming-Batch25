@@ -1,4 +1,4 @@
-package day31_Constructors.day37_Inheritance.scrumTask;
+package day37_Inheritance.scrumTask;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package day31_Constructors.day37_Inheritance.sportTask;
+package day37_Inheritance.sportTask;
 
 public class Sport {
 
