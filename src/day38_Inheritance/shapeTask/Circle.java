@@ -2,12 +2,24 @@ package day38_Inheritance.shapeTask;
 
 public class Circle extends Shape {
 
-    public double radius;
+    private double radius;
     public static double pi = 3.14;
 
-    public Circle( double radius) {
-        super("Circle");
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        if(radius<=0){
+            System.err.println("Invalid radius "+ radius);
+            System.exit(1);
+        }
         this.radius = radius;
+    }
+
+    public Circle(double radius) {
+        super("Circle");
+        setRadius(radius);
     }
 
     public double area() {
@@ -19,9 +31,14 @@ public class Circle extends Shape {
     }
 
 
+    @Override
     public String toString() {
-        return super.toString() +
-                "\n radius=" + radius;
+        return "Circle{" +
+                "radius=" + radius +
+                ", pi =" + pi +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
     }
 }
 /*
