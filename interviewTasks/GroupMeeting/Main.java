@@ -1,21 +1,31 @@
 package GroupMeeting;
 
 public class Main {
-    public static void main(final String arg[]) {
+    public static void main(String arg[]) {
 
 
-        int number = 20;
 
-        long factorial = 1l; // because result out of range with int
+            String[] str = {"Nermin", "loves", "Java", "Java", "Nermin"};
+            String result = "";
 
-        for (int i = 1; i <=number ; i++) { // 1*2*3*4*5    5*4*3*2*1
 
-            factorial*=i;
+            for (int j = 0; j < str.length; j++) {
 
-        }
+                int frequency = 0;
+                    for (int i = 0 ; i < str.length; i++) {
+                        if (str[j].equals(str[i])) {
+                            frequency++;
+                        }
+                    }
+                    if(!(result.contains(str[j]))){
+                        result+=str[j]+"="+frequency+"\n";
+                    }
 
-        System.out.println(factorial);
+                }
 
+        System.out.println(result);
+
+            
 
     }
 }
