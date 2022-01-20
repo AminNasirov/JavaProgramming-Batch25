@@ -1,6 +1,6 @@
 package InterviewTasksPart1;
 
-public class FrequencyOfElements {
+public class FrequencyOfElementsArray {
     public static void main(String[] args) {
 
         String[] str = {"Nermin", "loves", "Java", "Java", "Nermin"};
