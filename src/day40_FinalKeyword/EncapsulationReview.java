@@ -1,4 +1,4 @@
-package day_40_FinalKeyword;
+package day40_FinalKeyword;
 
 import day38_Inheritance.shapeTask.Circle;
 import day38_Inheritance.shapeTask.Square;

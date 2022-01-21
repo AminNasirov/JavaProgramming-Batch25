@@ -1,6 +1,6 @@
 package utilities;
 
-import day_40_FinalKeyword.ProtectedAccessModifier;
+import day40_FinalKeyword.ProtectedAccessModifier;
 
 public class AccessModifiers_Task4 extends ProtectedAccessModifier {
 

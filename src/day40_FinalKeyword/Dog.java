@@ -1,4 +1,4 @@
-package day_40_FinalKeyword;
+package day40_FinalKeyword;
 
 public final class Dog extends Animal {
 
