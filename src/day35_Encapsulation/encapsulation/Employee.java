@@ -13,7 +13,7 @@ public class Employee {
         setSalary(salary);
     }
 
-    public String getName(){
+    public  String getName(){
         return name;
     }
     public char getGender(){

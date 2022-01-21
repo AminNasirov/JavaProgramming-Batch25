@@ -18,5 +18,7 @@ public class EmployeeObject {
 
         System.out.println(employee2);
 
+        System.out.println(employee1.getAge());
+
     }
 }
