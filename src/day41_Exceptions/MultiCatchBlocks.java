@@ -38,8 +38,13 @@ public class MultiCatchBlocks {
 
         try {
             System.out.println("Java".charAt(-1));
-        }catch (RuntimeException e){
+        }catch (StringIndexOutOfBoundsException e){
+            System.out.println(" hello");
             e.printStackTrace();
+        }catch(RuntimeException e){
+            System.out.println(" hello1");
+        }finally{
+            System.out.println("hello2");
         }
 
 

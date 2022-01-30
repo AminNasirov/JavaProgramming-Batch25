@@ -15,6 +15,12 @@ class FadyException extends RuntimeException{ // custom unchecked exception
 
 class NoBreakException extends Exception{ // custom checked exception
 
+    public NoBreakException(String str){
+        super(str);
+    }
+
+
+
 }
 
 public class CustomExceptions {
@@ -25,9 +31,12 @@ public class CustomExceptions {
 
 
         try {
-            throw new NoBreakException();
+            throw new NoBreakException(" there is not any break");
         } catch (NoBreakException e) {
+            System.err.println(e.getMessage());
             e.printStackTrace();
+
+
         }
 
 

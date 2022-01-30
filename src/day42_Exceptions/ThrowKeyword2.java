@@ -1,14 +1,21 @@
 package day42_Exceptions;
 
+import java.util.NoSuchElementException;
+
+
 public class ThrowKeyword2 {
 
-    public static void main(String[] args) throws ArithmeticException {
+    public static void main(String[] args) {
 
-        System.out.println("Test started");
 
-        System.out.println(8/0);
+        throw new NoSuchElementException("No such Element"); // unchecked exception
+        //   throw new InterruptedException(); // checked exception
 
-        System.out.println("Test completed");
+
+        //  System.out.println("hello world");
+
+        // throw new Rectangle(5,7);
+
 
 
     }
