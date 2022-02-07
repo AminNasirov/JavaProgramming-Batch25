@@ -15,9 +15,20 @@ public class AnimalObjects {
         cat1.scratch();
         parrot1.sing();
 
+        Dog.canBreath= false;
+
+
+
         System.out.println(dog1);
         System.out.println(cat1);
         System.out.println(parrot1);
+
+        System.out.println("---------------------------------");
+
+
+        System.out.println(Dog.canBreath);
+
+        System.out.println(cat1.canBreath);
 
     }
 

@@ -8,6 +8,12 @@ public class Animal {
     public String size;
     public String color;
 
+    public static boolean canBreath;
+
+    static{
+        canBreath=true;
+    }
+
 
     public Animal(String name, String breed, char gender, int age, String size, String color) {
         this.name = name;
