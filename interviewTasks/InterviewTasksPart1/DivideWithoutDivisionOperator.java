@@ -5,14 +5,31 @@ public class DivideWithoutDivisionOperator {
     public static void main(String[] args){
 
 
-        int num1 = 97;
-        int num2 = 3;
+      int result = DivideWithoutDivision(-10,2);
+
+        System.out.println(result);
+
+
+
+
+
+
+
+    }
+
+    public static int DivideWithoutDivision(int num1, int num2){
+
+        if(num2==0){
+            throw new RuntimeException("invalid number");
+        }
+
         int result = 0;
 
-        for(int i = 0; i<=num1-num2; i+=num2){
+        for(int i = num1; i>=num2; i-=num2){
             result++;
         }
-        System.out.println(result);
+
+        return result;
     }
 
 }
