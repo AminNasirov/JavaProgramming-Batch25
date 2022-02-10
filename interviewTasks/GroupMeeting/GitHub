@@ -1,0 +1,13 @@
+get the task
+create your own branch
+work on the code on your branch
+git add, commit, etc...
+go to master
+get the changes from the master
+go back to your branch
+merge the changes you got from the master
+then git push
+then wait for approval
+there are 2 approvels
+first is someone from the team >> this is about your changes
+second approval is for PIPELINES (no need to know this yet)

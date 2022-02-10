@@ -5,7 +5,7 @@ public class DivideWithoutDivisionOperator {
     public static void main(String[] args){
 
 
-      int result = DivideWithoutDivision(-10,2);
+      int result = DivideWithoutDivision(10,2);
 
         System.out.println(result);
 
@@ -17,19 +17,21 @@ public class DivideWithoutDivisionOperator {
 
     }
 
-    public static int DivideWithoutDivision(int num1, int num2){
+    public static int DivideWithoutDivision(int divided, int divisor){
 
-        if(num2==0){
-            throw new RuntimeException("invalid number");
+
+
+       if(divided<0||divisor<=0){
+           throw new RuntimeException("invalid number");
+       }
+
+        int quotient = 0;
+
+        for(int i = divided; i>=divisor; i-=divisor){ // 10/2=5   10-2   8-2   6-2   4-2    2-2
+            quotient++;                                         // 1      2     3     4      5
         }
 
-        int result = 0;
-
-        for(int i = num1; i>=num2; i-=num2){
-            result++;
-        }
-
-        return result;
+        return quotient;
     }
 
 }
