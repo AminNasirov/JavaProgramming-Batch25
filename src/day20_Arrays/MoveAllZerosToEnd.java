@@ -11,8 +11,8 @@ public class MoveAllZerosToEnd {
           int num = 0;
         for (int i = 0; i < numbers1.length; i++) {
             if(numbers1[i]!=0){
-                numbers2[num]=numbers1[i];
-                num++;
+                numbers2[num++]=numbers1[i];
+
 
             }
         }
