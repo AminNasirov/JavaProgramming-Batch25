@@ -1,4 +1,4 @@
-package day41_Exceptions;
+package day40_FinalKeyword.day41_Exceptions;
 
 public class FinallyBlock {
 
