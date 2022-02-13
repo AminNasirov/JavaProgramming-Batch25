@@ -3,10 +3,10 @@ package InterviewTasksPart1;
 public class consecutiveNumbers {
     public static void main(String[] args) {
 
+        printConsecutiveNumbers(24);
+    }
 
-        int N = 24;
-
-        String name = "";
+    public static void printConsecutiveNumbers(int N){
 
         for (int i = 1; i <= N; i++) {
 
@@ -30,5 +30,7 @@ public class consecutiveNumbers {
 
 
         }
+
+
     }
 }
