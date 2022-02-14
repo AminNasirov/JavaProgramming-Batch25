@@ -10,16 +10,9 @@ public class DivideWithoutDivisionOperator {
         System.out.println(result);
 
 
-
-
-
-
-
     }
 
     public static int DivideWithoutDivision(int divided, int divisor){
-
-
 
        if(divided<0||divisor<=0){
            throw new RuntimeException("invalid number");

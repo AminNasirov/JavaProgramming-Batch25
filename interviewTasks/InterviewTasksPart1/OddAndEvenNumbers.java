@@ -5,27 +5,20 @@ import java.util.Scanner;
 public class OddAndEvenNumbers {
     public static void main(String[] args){
 
-        Scanner input = new Scanner(System.in);
+        System.out.println(oddEvenNumbers(10));
 
-
-
-while(true) {
-    int number = input.nextInt();
-    if(number<=0){
-        break;
-    }
-    if (number % 2 == 0) {
-        System.out.println("Even Number");
-    } else {
-        System.out.println("Odd Number");
     }
 
-}
-
-
-
-      input.close();
-
-
+    public static String oddEvenNumbers(int number){
+        String result ="";
+        if(number<=0){
+            throw new RuntimeException("invalid number");
+        }
+        if (number % 2 == 0) {
+            result="Even Number";
+        } else {
+            result="Odd Number";
+        }
+        return result;
     }
 }
