@@ -27,6 +27,56 @@ public class PolymorphismPractice {
         };
 
 
+        for (Car each : cars) {
+            if (each instanceof Toyota) {
+                if (each.year >= 2010 && each.year <= 2011) {
+                    System.out.println(each);
+                }
+            }
+
+            if (each instanceof BMW) {
+                if (each.year >= 1929 && each.year <= 2022) {
+                    System.out.println(each);
+                }
+            }
+
+            if (each instanceof Tesla) {
+                if (each.year >= 2015 && each.year <= 2016) {
+                    System.out.println(each);
+                }
+            }
+        }
+
+
+        System.out.println("---------------------------------------------------");
+
+            int highestMiles = cars[0].miles;
+
+            for (Car eachCar : cars) {
+                if(eachCar.miles>highestMiles){
+                    highestMiles=eachCar.miles;
+                }
+            }
+
+        System.out.println("highestMiles = " + highestMiles);
+
+
+        int lowestMiles = cars[0].miles;
+
+        for (Car eachCar : cars) {
+            if(eachCar.miles<lowestMiles){
+                lowestMiles=eachCar.miles;
+            }
+        }
+
+        System.out.println("lowestMiles = " + lowestMiles);
+
+
+
+
+
+
+
 
 
 

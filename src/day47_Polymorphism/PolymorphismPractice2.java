@@ -1,9 +1,13 @@
 package day47_Polymorphism;
 
 
+import day38_Inheritance.CarTask.Tesla;
 import day43_Abstraction.EmployeeTask.Developer;
 import day43_Abstraction.EmployeeTask.Employee;
 import day43_Abstraction.EmployeeTask.Tester;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class PolymorphismPractice2 {
     public static void main(String[] args) {
@@ -27,6 +31,31 @@ public class PolymorphismPractice2 {
                 new Developer("Enes",  26, 'M',14, "Full Stack Developer", 142000),
                 new Tester("Mikael",  30, 'M',15, "SDET", 105000),
         };
+
+
+
+        List<Employee> scrumMembers = new ArrayList<>();
+
+
+        for (Employee employee : employees) {
+            if (employee instanceof Tester || employee instanceof Developer) {
+                scrumMembers.add(employee);
+            }
+        }
+
+        List<Tester> testers = new ArrayList<>();
+
+
+        for (Employee employee : employees) {
+            if (employee instanceof Tester ) {
+                testers.add((Tester)employee);
+            }
+        }
+
+
+
+
+
 
 
 

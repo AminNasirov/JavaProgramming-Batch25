@@ -3,7 +3,7 @@ package InterviewTasksPart1;
 public class consecutiveNumbers {
     public static void main(String[] args) {
 
-        printConsecutiveNumbers(24);
+        printConsecutiveNumbers(30);
     }
 
     public static void printConsecutiveNumbers(int N){
@@ -34,3 +34,6 @@ public class consecutiveNumbers {
 
     }
 }
+/*
+
+ */
