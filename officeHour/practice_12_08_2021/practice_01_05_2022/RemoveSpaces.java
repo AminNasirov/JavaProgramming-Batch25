@@ -1,4 +1,4 @@
-package practice_01_05_2022;
+package practice_12_08_2021.practice_01_05_2022;
 
 public class RemoveSpaces {
     public static void main(String[] args) {
