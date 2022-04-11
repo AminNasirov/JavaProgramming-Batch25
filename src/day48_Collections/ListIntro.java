@@ -2,7 +2,7 @@ package day48_Collections;
 
 import java.util.*;
 
-public class ListIntro {
+public class  ListIntro {
 
     public static void main(String[] args) {
 

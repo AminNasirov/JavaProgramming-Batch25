@@ -6,7 +6,7 @@ public class PrimeNumber {
         // prime numbers are greater than one
         // to be prime have to be divisible by 1 and the number itself
         // 7 is divisible by 1 and 7 , but is not divisible by 2, 3 ,4,5,6,
-        System.out.println(isPrime(51));
+        System.out.println(isPrime(11));
     }
 
     public static boolean isPrime(int number) {

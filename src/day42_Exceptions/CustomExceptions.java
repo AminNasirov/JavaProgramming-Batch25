@@ -13,7 +13,7 @@ class FadyException extends RuntimeException{ // custom unchecked exception
 }
 
 
-class NoBreakException extends Exception{ // custom checked exception
+class NoBreakException extends InterruptedException{ // custom checked exception
 
     public NoBreakException(String str){
         super(str);

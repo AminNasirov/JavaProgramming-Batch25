@@ -17,7 +17,7 @@ public class QueuePractice {
         System.out.println("arrayQueue = " + arrayQueue);
 
         Queue<Integer> linkedList = new LinkedList<>();
-        linkedList.addAll(Arrays.asList(10,200,300,40,90));
+        linkedList.addAll(Arrays.asList(10,200,300,40,90,null));
 
         System.out.println("linkedList = " + linkedList);
 
@@ -35,7 +35,7 @@ public class QueuePractice {
 
         System.out.println("----------------------------------------------");
 
-       // System.out.println(((LinkedList)linkedList).get(1));
+        System.out.println(((LinkedList)linkedList).get(1));
 
         // System.out.println(priorityQueue.get(1));
         //  System.out.println(arrayDeque.get(1));

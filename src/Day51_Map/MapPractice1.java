@@ -3,7 +3,7 @@ package Day51_Map;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MapPractice1 {
+public class  MapPractice1 {
 
     public static void main(String[] args) {
 

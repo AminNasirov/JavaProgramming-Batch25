@@ -6,31 +6,64 @@ import java.util.Scanner;
 public class Anagram {
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
-        System.out.println("enter your first word: ");
-        String word1 = scan.nextLine();
-        System.out.println("enter your second word: ");
-        String word2 = scan.nextLine();
-        scan.close();
+        String str1= "heart";
+        String str2 = "earth";
 
-        // String[] w1 = word1.split("");
-        // String[] w2 = word2.split("");
+        Anagram(str1,str2);
 
-        char[] w1 = word1.toCharArray();//[e,a,r,t,h]
-        char[] w2 = word2.toCharArray(); // [h,e,a,r,t]
+        String name = "Level";
 
-        Arrays.sort(w1);
-        Arrays.sort(w2);
+        Anagram1(name);
 
-        if(Arrays.equals(w1,w2)){
-            System.out.println("your word are Anagram");
+
+    }
+
+    public static void Anagram(String str1, String str2){
+
+
+        char[] arr1 = str1.toCharArray();
+        char[] arr2 = str2.toCharArray();
+
+
+
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+
+
+        boolean result = true;
+
+        if(Arrays.equals(arr1,arr2)){
+            result=true;
         }else{
-            System.err.println("your word are not Anagram");
+            result=false;
         }
 
+        System.out.println(result);
 
 
 
 
     }
+
+
+    public static void Anagram1(String str3){
+
+        String reversed ="";
+
+        for (int i = str3.length()-1; i >=0 ; i--) {
+            reversed+=str3.charAt(i);
+        }
+
+        if(str3.equalsIgnoreCase(reversed)){
+            System.out.println("it is Anagram");
+        }else{
+            System.err.println("it is not Anagram");
+        }
+
+
+    }
+
+
+
+
 }

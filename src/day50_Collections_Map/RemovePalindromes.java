@@ -50,15 +50,17 @@ public class RemovePalindromes {
 
  */
 
-        /*
-        names2.removeIf(str -> { String reverse = "";
+
+        names2.removeIf(str -> {
+            String reverse = "";
             for(int i = str.length()-1; i >= 0; i--){
                 reverse += str.charAt(i);
             }
-            return reverse.equalsIgnoreCase(str);}
+            return !reverse.equalsIgnoreCase(str);
+        }
         );
         System.out.println(names2);
-        */
+
 
     }
 
