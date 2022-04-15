@@ -13,7 +13,7 @@ public class Anagram {
 
         String name = "Level";
 
-        Anagram1(name);
+        Palindrome(name);
 
 
     }
@@ -46,7 +46,7 @@ public class Anagram {
     }
 
 
-    public static void Anagram1(String str3){
+    public static void Palindrome(String str3){
 
         String reversed ="";
 
@@ -55,9 +55,9 @@ public class Anagram {
         }
 
         if(str3.equalsIgnoreCase(reversed)){
-            System.out.println("it is Anagram");
+            System.out.println("it is Palindrome");
         }else{
-            System.err.println("it is not Anagram");
+            System.err.println("it is not Palindrome");
         }
 
 

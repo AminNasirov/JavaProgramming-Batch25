@@ -3,7 +3,7 @@ package InterviewTasksPart1;
 public class Week6_JavaCodingTsk {
     public static void main(String[] args) {
 
-        String password = "Qtfldkfldk147";
+        String password = "Qtfldkfldk147$";
         verifyPassword(password);
 
         String numbers = "123123ajdkf";
